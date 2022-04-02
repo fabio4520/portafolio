@@ -1,0 +1,120 @@
+/* LAYOUT */
+.section-md {
+  margin-block-start: 48px;
+  margin-block-end: 48px;
+}
+
+.container-lg {
+  max-width: 1024px;
+  padding: 0 16px 0 16px;
+  margin: 0 auto;
+}
+
+.section-project {
+  padding: 64px 16px;
+}
+
+/* ARTICLE - STARTS*/
+.article {
+  font-size: 1.8rem;
+}
+
+.article p {
+  font-family: var(--font-primary);
+  margin-block-start: 24px;
+  margin-block-end: 24px;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  color: var(--gray-700);
+}
+
+.article h2 {
+  font-family: var(--font-secondary);
+  margin-block-start: 56px;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 4rem;
+  color: var(--gray-900);
+}
+
+.article ul {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  color: var(--gray-700);
+  padding-inline-start: 16px;
+}
+.article ul li {
+  padding-inline-start: 0.8rem;
+  margin-block-end: 1rem;
+}
+/* ARTICLE - ENDS */
+
+
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(328px, 1fr));
+  gap: 10px;
+}
+
+.info a {
+  margin-block-start: 40px;
+}
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 15px;
+  margin-block-start: 48px;
+  margin-block-end: 60px;
+}
+
+.figure {
+  margin-inline-start: 32px;
+}
+.figure img {border-radius: 15px;}
+.figure img:hover {
+  border-radius: 6px;
+  transition: all 0.4s ease;
+  transform: scale(1.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+}
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  max-width: 320px;
+}
+.feature-card span {
+  margin-block-start: 20px;
+}
+
+.feature-card svg {
+  width: 33px;
+  height: 33px;
+  background-color: var(--blue-800);
+  fill: white;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.social-icons {
+  display: flex;
+  flex-wrap: wrap;
+}
+.social-icons i {
+  font-size: 2.2rem;
+  color: var(--blue-900);
+}
+.social-icons i:hover {
+  background-color: var(--blue-800);
+  color: var(--white);
+  padding: 4px;
+  transition: all 0.4s ease;
+  border-radius: 10px;
+}
+
+
+

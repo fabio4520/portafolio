@@ -1,0 +1,337 @@
+body {
+  font-family: var(--font-secondary);
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.title {
+  font-size: 5rem;
+  color: var(--blue-600);
+}
+.debug {
+  border: 4px solid pink;
+}
+.button--primary {
+  background-color: var(--blue-oxford);
+  color: var(--white);
+  max-width: 200px;
+  border-radius: 10px;
+  padding: 6px;
+}
+
+.button--primary:hover {
+  background: #fff;
+  color: var(--blue-oxford);
+  box-shadow: 0 4px 4px rgba(83, 100, 255, 0.32);
+}
+
+/* .button--primary:active {
+  background-color: var(--blue-900);
+  color: var(--white);
+} */
+
+.button--primary:focus {
+  outline: 2px solid var(--blue-oxford);
+  outline-offset: 2px;
+}
+
+/* .button--primary:disabled {
+  opacity: 0.6;
+  cursor: default;
+  background-color: var(--blue-oxford);
+} */
+
+/* NAVBAR STARTS */
+.navbar {
+  position: fixed;
+  width: 100%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px 0 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+}
+.navbar__title {
+  font-family: var(--font-primary);
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--white);
+}
+.navbar__links {
+  font-family: var(--font-primary);
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+.navbar__link {
+  text-decoration: none;
+}
+.link {
+  color: var(--white);
+}
+
+/* HOME - starts */
+.home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.home__background {
+  /* background-color: #8e8e8e; */
+  background-image: url("../../img/hero2.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.home__container {
+  width: 780px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home__info {
+  color: var(--lightest-slate);
+  text-align: center;
+}
+.home__info h1 {font-size: 5rem;}
+.home__info p {font-size: 2.4rem}
+.home__figure {max-width: 300px;}
+.home__figure--img {
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+
+/* HOME - ends */
+
+
+/* ABOUT - STARTS */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 32px;
+  padding: 70px 0 70px 0;
+}
+.about__info {
+  max-width: 400px;
+  margin-inline-start: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about__subtitle{
+  font-size: 2.2rem;
+  color: var(--blue-oxford);
+  margin-block-end: 16px;
+}
+.paragraph {
+  margin-block-end: 16px;
+}
+
+
+.about__skills {
+  text-align: center;
+  width: 900px;
+}
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+}
+.skills__card {
+  text-align: center;
+  max-width: 432px;
+  margin-inline-start: 19.2px;
+}
+
+.skills__card svg {
+  max-width: 100px;
+}
+.skills__card:hover {
+  border-radius: 6px;
+  transition: all 0.4s ease;
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  
+}
+/* ABOUT - ENDS */
+
+
+
+
+/* PORTFOLIO STARTS */
+.portfolio {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--gray-100);
+  padding: 70px 0 70px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.portfolio__grid {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  gap: 32px;
+}
+.portfolio__container {
+  text-align: center;
+}
+.portfolio__container h2{
+  margin-block-end: 16px;
+}
+
+.project__card{
+  position: relative;
+  width: 300px;
+  height: 250px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  overflow: hidden;
+}
+
+.project__card figure {
+  position: absolute;
+  /* top: 15%; */
+  border-radius: 10px;
+  transition: 0.4s ease;
+}
+.project__card .project__card--info {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  /* padding: 20px 0 0 0; */
+  top: 250px;
+  opacity: 0;
+  transition: 0.4s ease;
+}
+.project__card:hover .project__card--info {
+  top: 0px;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  color: var(--white);
+  transition: 0.4s ease;
+}
+
+.project__card:hover figure {
+  border-radius: 10px;
+  transform: scale(1.2);
+  transition: 0.4s ease;
+}
+.project__card:hover figure img{
+  object-fit: cover;
+}
+/* PORTFOLIO ENDS */
+
+
+/* CONTACT-STARTS */
+.contact {
+  margin: 60px 0 60px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+#email {color: #BB001B;}
+#github {color: var(--black);}
+#linkedin {color: #006192;}
+#instagram {color: #3F729B;}
+#facebook {color: #1778F2;}
+
+
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 1.6rem 0 1rem 0;
+}
+
+.socials li {
+  margin: 0 1rem;
+}
+
+.socials a {
+  text-decoration: none;
+  /* color: var(--blue-200); */
+}
+
+.socials a i {
+  font-size: 6rem;
+  transition: color 0.3s ease;
+}
+
+.socials a:hover #email,
+.socials a:hover #github,
+.socials a:hover #linkedin,
+.socials a:hover #instagram,
+.socials a:hover #facebook
+{
+  color: var(--blue-oxford);
+}
+
+/* CONTACT-ENDS */
+
+
+/* FOOTER-STARTS */
+.footer {
+  background-color: var(--black);
+  height: auto;
+  font-family: var(--font-primary);
+  padding-top: 2rem;
+  color: var(--white);
+}
+.footer-bottom {
+  background-color: var(--black-footer-bottom);
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 1.4rem;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: 0.7;
+  font-weight: 300;
+}
+
+/* FOOTER-ENDS */
+
+
+
+/* MEDIA QUERIES NAVBAR - STARTS */
+/* @media (max-width: 990px) {
+  
+} */
+/* MEDIA QUERIES NAVBAR - ENDS */
