@@ -35,6 +35,7 @@ html:focus-within {
 /* https://engageinteractive.co.uk/blog/em-vs-rem-vs-px#:~:text=A%20typical%20method%20is%20to,rem%20would%20now%20equal%2020px. */
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 body {
   min-height: 100vh;
