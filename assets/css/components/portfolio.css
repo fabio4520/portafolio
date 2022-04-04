@@ -121,7 +121,7 @@
 .group-icon svg {
   width: 44px;
   height: 44px;
-  background-color: rgb(255, 255, 255, 0.25);
+  background-color: rgb(255, 255, 255, 0.5);
   border-radius: 8px;
   padding: 5px;
 }
